@@ -1,0 +1,39 @@
+#include<iostream>
+using namepsace std;
+float income(int rows, int colums, string screening);
+main()
+{
+int rows, columns;
+string screening;
+cout<< "Enter number of rows ";
+cin>>rows;
+cout<< "Enter number of columns ";
+cin>>columns;
+cout<< "Enter the type of screening ";
+result= income(rows, colums, screening);
+cout<<result;
+}
+float income(int rows, int colums, string screening)
+float payable;
+if (screening == "Premiere")
+ {
+    payable = rows * columns* 12.00;
+    return payable;
+ }
+else if (screening == "Normal")
+ {
+    payable= rows * colums * 7.5;
+    return payable;
+ }
+ else if( screening == "Ordinary")
+ {
+    payable = rows * columns * 5.00;
+    return payable;
+ }
+ else
+ {
+    return payable;
+ }
+
+
+

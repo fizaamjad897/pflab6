@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+string calcspeed(int speed);
+main()
+ {
+    int speed;
+    cout<< "Enter speed of the vehicle ";
+    cin>>speed;
+    string result;
+    result= calcspeed(speed);
+    cout<<result;
+ }
+ string calcspeed(int speed)
+{
+    string range;
+    if(speed<=10)
+     {
+       range = "slow";
+     }
+     if(speed>10 || speed<=50)
+     {
+       range = "average";
+     }
+     if(speed>10 || speed<=150)
+     {
+       range = "fast";
+     }
+     if(speed>150 || speed<=1000)
+     {
+       range = "ultra - fast";
+     }
+     else
+     {
+        range = "extremely fast ";
+     }
+     return range;
+     
+
+}
